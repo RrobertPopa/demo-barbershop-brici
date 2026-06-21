@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BRICI Barbershop & Grooming · Strada Jiului 93, București</title>
+<meta name="description" content="Frizerie premium pe Strada Jiului 93, București. Tuns, barbă și styling de la o echipă cu 4.7 stele și 245 recenzii. Programează online." />
+<link rel="canonical" href="https://mero.ro/p/brici-barbershopgrooming" />
+
+<meta property="og:type" content="business.business" />
+<meta property="og:title" content="BRICI Barbershop & Grooming · București" />
+<meta property="og:description" content="Tuns, barbă și styling premium pe Strada Jiului 93. 4.7 stele din 245 de recenzii. Programează online." />
+<meta property="og:image" content="assets/interior.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BarberShop",
+  "name":"BRICI Barbershop & Grooming",
+  "image":"assets/interior.jpg",
+  "telephone":"+40735933039",
+  "url":"https://mero.ro/p/brici-barbershopgrooming",
+  "priceRange":"30–120 lei",
+  "address":{"@type":"PostalAddress","streetAddress":"Strada Jiului 93","postalCode":"013212","addressLocality":"București","addressCountry":"RO"},
+  "geo":{"@type":"GeoCoordinates","latitude":44.4845662,"longitude":26.0494154},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"245"},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"16:00"}
+  ],
+  "sameAs":["https://www.instagram.com/brici_barbershop/","https://www.facebook.com/people/BRICI-BarbershopGrooming/100057567694330/"]
+}
+</script>
+
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+<link rel="icon" href="assets/logo.jpg" />
+
+<style>
+  :root{
+    --black:#0a0b0e;
+    --night:#0f1117;
+    --surface:#14161d;
+    --surface-2:#1b1e27;
+    --line:rgba(201,161,74,.16);
+    --gold:#c9a14a;
+    --gold-soft:#e3c478;
+    --blue:#1b3a63;
+    --blue-soft:#3a6196;
+    --bronze:#8a6a3e;
+    --cream:#f4f0e8;
+    --muted:#9a958b;
+    --maxw:1180px;
+    --r:16px;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--black);
+    color:var(--cream);
+    font-family:"Satoshi",system-ui,sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* grain */
+  body::before{
+    content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.04;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:"Clash Display",serif;font-weight:600;line-height:1.04;letter-spacing:-.01em}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{
+    font-size:.78rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);
+    font-weight:700;display:inline-flex;align-items:center;gap:.7rem;
+  }
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--gold);opacity:.6}
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+    padding:.95rem 1.7rem;border-radius:999px;font-weight:700;font-size:.95rem;
+    letter-spacing:.02em;cursor:pointer;border:1px solid transparent;
+    transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,background .3s;
+    will-change:transform;
+  }
+  .btn-gold{
+    background:linear-gradient(135deg,var(--gold-soft),var(--gold));
+    color:#1a1407;box-shadow:0 10px 30px -10px rgba(201,161,74,.6);
+  }
+  .btn-gold:hover{transform:translateY(-3px);box-shadow:0 18px 40px -12px rgba(201,161,74,.7)}
+  .btn-ghost{border-color:rgba(244,240,232,.28);color:var(--cream)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft);transform:translateY(-3px)}
+  .btn svg{width:18px;height:18px}
+
+  /* ---------- header ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    transition:background .4s,backdrop-filter .4s,border-color .4s,padding .4s;
+    border-bottom:1px solid transparent;padding:18px 0;
+  }
+  header.scrolled{
+    background:rgba(10,11,14,.82);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);padding:10px 0;
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:.7rem;font-family:"Clash Display";font-weight:700;font-size:1.15rem;letter-spacing:.04em}
+  .brand img{width:40px;height:40px;border-radius:50%;border:1px solid var(--line)}
+  .brand span b{color:var(--gold)}
+  .nav-links{display:flex;align-items:center;gap:2.2rem}
+  .nav-links a{font-size:.92rem;color:var(--muted);font-weight:500;transition:color .25s;position:relative}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold);transition:width .3s}
+  .nav-links a:hover{color:var(--cream)}
+  .nav-links a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:.8rem}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px;z-index:1100}
+  .burger span{width:26px;height:2px;background:var(--cream);transition:.3s}
+  body.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  body.menu-open .burger span:nth-child(2){opacity:0}
+  body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+  /* mobile menu — panou propriu, fundal solid (nu depinde de backdrop-ul headerului) */
+  .mobile-menu{
+    position:fixed;inset:0;z-index:1050;background:var(--night);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.6rem;
+    opacity:0;visibility:hidden;transform:translateY(-12px);transition:.4s;
+  }
+  body.menu-open .mobile-menu{opacity:1;visibility:visible;transform:none}
+  .mobile-menu a{font-family:"Clash Display";font-size:1.8rem;color:var(--cream)}
+  .mobile-menu a:hover{color:var(--gold)}
+  .mobile-menu .btn{margin-top:.6rem}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;z-index:-2}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(.2) contrast(1.05)}
+  .hero-bg::after{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(120% 90% at 80% 10%,rgba(27,58,99,.35),transparent 60%),
+      linear-gradient(180deg,rgba(10,11,14,.72) 0%,rgba(10,11,14,.55) 35%,rgba(10,11,14,.92) 100%);
+  }
+  .hero-inner{position:relative;z-index:2;padding:140px 0 90px;max-width:760px}
+  .hero h1{font-size:clamp(2.8rem,8vw,5.6rem);margin:1.4rem 0 1.2rem}
+  .hero h1 em{font-style:normal;color:var(--gold);display:block}
+  .hero p.lead{font-size:clamp(1.05rem,2.4vw,1.3rem);color:#d8d3c8;max-width:560px;margin-bottom:2.2rem}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:1.8rem;margin-top:2.6rem;padding-top:1.8rem;border-top:1px solid rgba(244,240,232,.12)}
+  .hero-meta div b{font-family:"Clash Display";font-size:1.5rem;color:var(--gold-soft);display:block}
+  .hero-meta div small{color:var(--muted);font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+  .scrolldown{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:var(--muted);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:.6rem}
+  .scrolldown::after{content:"";width:1px;height:42px;background:linear-gradient(var(--gold),transparent);animation:drop 1.8s infinite}
+  @keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+  /* ---------- sections ---------- */
+  section{padding:clamp(72px,10vw,128px) 0;position:relative}
+  .sec-head{max-width:680px;margin-bottom:3.4rem}
+  .sec-head h2{font-size:clamp(2rem,5vw,3.3rem);margin:1rem 0 .8rem}
+  .sec-head p{color:var(--muted);font-size:1.05rem}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head.center .eyebrow::after{content:"";width:34px;height:1px;background:var(--gold);opacity:.6}
+
+  /* trust strip */
+  .trust{background:linear-gradient(90deg,var(--surface),var(--surface-2));border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:34px 0}
+  .trust .wrap{display:flex;flex-wrap:wrap;gap:1.5rem 3rem;align-items:center;justify-content:space-between}
+  .stars{display:inline-flex;gap:2px;color:var(--gold);vertical-align:middle}
+  .stars svg{width:1.05em;height:1.05em}
+  .trust b{font-family:"Clash Display";color:var(--cream)}
+  .trust a{color:var(--gold-soft);font-weight:700;border-bottom:1px solid rgba(201,161,74,.4);padding-bottom:2px}
+  .trust a:hover{color:var(--gold)}
+
+  /* services */
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2rem}
+  .svc{
+    background:linear-gradient(180deg,var(--surface),var(--night));border:1px solid var(--line);
+    border-radius:var(--r);padding:2rem 1.9rem;display:flex;flex-direction:column;gap:.8rem;
+    transition:transform .4s,border-color .4s;position:relative;overflow:hidden;
+  }
+  .svc::before{content:"";position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--gold),transparent);opacity:0;transition:.4s}
+  .svc:hover{transform:translateY(-6px);border-color:rgba(201,161,74,.4)}
+  .svc:hover::before{opacity:1}
+  .svc .top{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem}
+  .svc h3{font-size:1.3rem}
+  .svc .price{font-family:"Clash Display";font-size:1.7rem;color:var(--gold-soft);white-space:nowrap}
+  .svc .dur{font-size:.8rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  .svc p{color:var(--muted);font-size:.95rem;flex:1}
+  .svc .book{margin-top:.6rem;font-weight:700;color:var(--gold-soft);display:inline-flex;align-items:center;gap:.4rem;font-size:.92rem}
+  .svc .book svg{width:15px;height:15px;transition:transform .3s}
+  .svc:hover .book svg{transform:translateX(4px)}
+
+  /* gallery */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+  .gallery figure{position:relative;overflow:hidden;border-radius:var(--r);border:1px solid var(--line)}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+  .gallery figure:hover img{transform:scale(1.06)}
+  .gallery figure::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,11,14,.5));opacity:0;transition:.4s}
+  .gallery figure:hover::after{opacity:1}
+  .g-tall{grid-row:span 2}
+  .g-wide{grid-column:span 2}
+
+  /* team */
+  .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.6rem}
+  .barber{text-align:center;display:flex;flex-direction:column;align-items:center;gap:.9rem}
+  .barber .ph{
+    width:140px;height:140px;border-radius:50%;overflow:hidden;position:relative;
+    border:2px solid var(--line);transition:.4s;
+  }
+  .barber .ph::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 30px rgba(0,0,0,.4)}
+  .barber img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35) contrast(1.05);transition:.5s}
+  .barber:hover .ph{border-color:var(--gold);transform:translateY(-4px)}
+  .barber:hover img{filter:grayscale(0)}
+  .barber h3{font-size:1.15rem;font-weight:600}
+  .barber span{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
+
+  /* reviews */
+  .reviews{background:linear-gradient(180deg,var(--night),var(--black))}
+  .rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.2rem}
+  .rev{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.8rem;display:flex;flex-direction:column;gap:1rem}
+  .rev .stars{font-size:1.05rem}
+  .rev p{font-size:1rem;color:#d8d3c8;flex:1}
+  .rev .who{display:flex;align-items:center;gap:.8rem;border-top:1px solid var(--line);padding-top:1rem}
+  .rev .av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--bronze));display:flex;align-items:center;justify-content:center;font-family:"Clash Display";font-weight:700;color:#1a1407}
+  .rev .who b{display:block;font-size:.95rem}
+  .rev .who small{color:var(--muted);font-size:.8rem}
+  .rev-foot{text-align:center;margin-top:2.6rem}
+
+  /* hours + contact split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:stretch}
+  .panel{background:linear-gradient(180deg,var(--surface),var(--night));border:1px solid var(--line);border-radius:var(--r);padding:2.4rem}
+  .hours li{display:flex;justify-content:space-between;padding:.85rem 0;border-bottom:1px dashed rgba(244,240,232,.12);font-size:1rem}
+  .hours li:last-child{border-bottom:0}
+  .hours li.today{color:var(--gold-soft);font-weight:700}
+  .hours li.today .tag{font-size:.66rem;background:var(--gold);color:#1a1407;padding:2px 8px;border-radius:99px;margin-left:.5rem;letter-spacing:.08em}
+  .hours .closed{color:#7d6a55}
+  .contact-list{display:flex;flex-direction:column;gap:1.4rem;margin-bottom:1.8rem}
+  .contact-list .row{display:flex;gap:1rem;align-items:flex-start}
+  .contact-list .ico{width:42px;height:42px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold)}
+  .contact-list .ico svg{width:20px;height:20px}
+  .contact-list b{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.15rem}
+  .contact-list a,.contact-list span{font-size:1.05rem;color:var(--cream)}
+  .contact-list a:hover{color:var(--gold-soft)}
+  .map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:320px;height:100%}
+  .map iframe{width:100%;height:100%;min-height:320px;border:0;filter:grayscale(.4) invert(.92) hue-rotate(180deg) contrast(.9)}
+  .socials{display:flex;gap:.8rem}
+  .socials a{width:46px;height:46px;border-radius:12px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--cream);transition:.3s}
+  .socials a:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-3px)}
+  .socials svg{width:20px;height:20px}
+
+  /* CTA band */
+  .cta-band{position:relative;text-align:center;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .cta-band .bg{position:absolute;inset:0;z-index:-1}
+  .cta-band .bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.5) brightness(.32)}
+  .cta-band h2{font-size:clamp(2rem,5.5vw,3.6rem);max-width:760px;margin:0 auto 1.4rem}
+  .cta-band p{color:#cfc9bd;max-width:520px;margin:0 auto 2.2rem}
+
+  /* footer */
+  footer{background:var(--black);padding:60px 0 40px;border-top:1px solid var(--line)}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem;align-items:center}
+  .foot .brand img{width:48px;height:48px}
+  .foot small{color:var(--muted);font-size:.85rem;display:block;margin-top:.5rem;max-width:320px}
+  .foot-links{display:flex;gap:1.6rem;flex-wrap:wrap}
+  .foot-links a{color:var(--muted);font-size:.9rem}
+  .foot-links a:hover{color:var(--gold)}
+  .credit{margin-top:2.5rem;padding-top:1.6rem;border-top:1px solid rgba(244,240,232,.08);text-align:center;color:#6a6459;font-size:.8rem}
+  .credit a{color:var(--muted)}
+
+  /* floating whatsapp */
+  .wa-float{
+    position:fixed;right:22px;bottom:22px;z-index:900;width:60px;height:60px;border-radius:50%;
+    background:#25d366;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 12px 30px -8px rgba(37,211,102,.6);transition:transform .3s;
+  }
+  .wa-float:hover{transform:scale(1.08)}
+  .wa-float svg{width:32px;height:32px;fill:#fff}
+  .wa-float::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:pulse 2.2s infinite}
+  @keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.6);opacity:0}}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- responsive ---------- */
+  @media(max-width:900px){
+    .nav-links,.nav-cta .btn{display:none}
+    .burger{display:flex}
+    .split{grid-template-columns:1fr}
+    .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px;grid-auto-flow:dense}
+    .g-wide{grid-column:auto}
+    .g-tall{grid-row:auto}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 18px}
+    .hero-meta{gap:1.2rem}
+    .hero-cta .btn{flex:1}
+    .gallery{grid-auto-rows:150px}
+    .panel{padding:1.6rem}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="head">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <img src="assets/logo.jpg" alt="BRICI logo" />
+      <span>BRICI<b>.</b></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#servicii">Servicii</a>
+      <a href="#galerie">Rezultate</a>
+      <a href="#echipa">Echipa</a>
+      <a href="#recenzii">Recenzii</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-gold" href="https://mero.ro/p/brici-barbershopgrooming" target="_blank" rel="noopener">Programează-te</a>
+      <button class="burger" id="burger" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#servicii">Servicii</a>
+  <a href="#galerie">Rezultate</a>
+  <a href="#echipa">Echipa</a>
+  <a href="#recenzii">Recenzii</a>
+  <a href="#contact">Contact</a>
+  <a class="btn btn-gold" href="https://mero.ro/p/brici-barbershopgrooming" target="_blank" rel="noopener">Programează online</a>
+</div>
+
+<!-- HERO -->
+<div id="top"></div>
+<section class="hero">
+  <div class="hero-bg" id="heroBg">
+    <img src="assets/interior.jpg" alt="Interior BRICI Barbershop" />
+  </div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">Barbershop & Grooming · București</span>
+      <h1>Tunsoarea care<br/><em>te reprezintă.</em></h1>
+      <p class="lead">Pe Strada Jiului 93, o echipă de barberi dedicați transformă fiecare tuns și aranjat de barbă într-un ritual. Precizie, produse premium și un scaun unde te simți acasă.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="https://mero.ro/p/brici-barbershopgrooming" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+          Programează online
+        </a>
+        <a class="btn btn-ghost" href="https://wa.me/40735933039" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zM6.597 20.13c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.477-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+          Scrie-ne pe WhatsApp
+        </a>
+      </div>
+      <div class="hero-meta">
+        <div><b>4.7/5</b><small>Rating Google</small></div>
+        <div><b data-count="245" data-suffix="+">245+</b><small>Recenzii reale</small></div>
+        <div><b data-count="5" data-suffix="">5</b><small>Barberi în echipă</small></div>
+      </div>
+    </div>
+  </div>
+  <a href="#servicii" class="scrolldown">scroll</a>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap">
+    <div><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg></span> &nbsp; <b>4.7 / 5</b> din <b>245 recenzii</b> pe Google</div>
+    <div>Premiat <b>„Firma de Aur"</b> · Sector 1, București</div>
+    <div><a href="https://www.google.com/maps/place/BRICI+Barbershop+%26+Grooming/@44.4844025,26.0494496,18z/data=!4m6!3m5!1s0x40b203d700ffb0f9:0x67a72552678420df!8m2!3d44.4845662!4d26.0494154!16s%2Fg%2F11h5rvv8s5" target="_blank" rel="noopener">Vezi recenziile pe Google</a></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="servicii">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Servicii & Prețuri</span>
+      <h2>Fiecare detaliu, lucrat cu brici.</h2>
+      <p>Servicii clare, prețuri corecte. Programezi online în câteva secunde și alegi barberul preferat.</p>
+    </div>
+    <div class="services-grid">
+
+      <article class="svc reveal">
+        <div class="top">
+          <div><h3>Tuns + Spălat</h3><span class="dur">1 oră</span></div>
+          <div class="price">80 lei</div>
+        </div>
+        <p>Spălat, tuns și styling complet. Consultanță pentru forma care ți se potrivește și finisaj cu produse premium.</p>
+        <a class="book" href="https://mero.ro/p/brici-barbershopgrooming" target="_blank" rel="noopener">Programează<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="svc reveal">
+        <div class="top">
+          <div><h3>Tuns + Spălat + Barbă</h3><span class="dur">1 oră</span></div>
+          <div class="price">120 lei</div>
+        </div>
+        <p>Pachetul complet: tuns, spălat și aranjat barbă cu contur la brici. Ieși cu look-ul finisat din cap până la barbă.</p>
+        <a class="book" href="https://mero.ro/p/brici-barbershopgrooming" target="_blank" rel="noopener">Programează<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="svc reveal">
+        <div class="top">
+          <div><h3>Aranjat Barbă</h3><span class="dur">30 min</span></div>
+          <div class="price">40 lei</div>
+        </div>
+        <p>Tuns barba, contur cu brici sau mașină și produse de îngrijire dedicate. Barbă definită, hidratată și impecabilă.</p>
+        <a class="book" href="https://mero.ro/p/brici-barbershopgrooming" target="_blank" rel="noopener">Programează<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="svc reveal">
+        <div class="top">
+          <div><h3>Tuns uniform / zero</h3><span class="dur">30 min</span></div>
+          <div class="price">30 lei</div>
+        </div>
+        <p>Tunsoare uniformă cu zero, shaver sau un număr la alegere. Rapid, curat, exact cum îl vrei.</p>
+        <a class="book" href="https://mero.ro/p/brici-barbershopgrooming" target="_blank" rel="noopener">Programează<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="galerie">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Rezultate reale</span>
+      <h2>Munca vorbește în locul nostru.</h2>
+      <p>Tunsori și finisaje făcute în salonul nostru de pe Strada Jiului. Fără filtre — doar precizie.</p>
+    </div>
+    <div class="gallery">
+      <figure class="g-tall reveal"><img src="assets/result-1.jpg" alt="Tunsoare taper texturat — rezultat BRICI" loading="lazy" /></figure>
+      <figure class="g-wide reveal"><img src="assets/interior.jpg" alt="Interiorul salonului BRICI" loading="lazy" /></figure>
+      <figure class="reveal"><img src="assets/result-2.jpg" alt="Tunsoare clasică cu fade — rezultat BRICI" loading="lazy" /></figure>
+      <figure class="reveal"><img src="assets/result-3.jpg" alt="Tunsoare curly cu contur — rezultat BRICI" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="echipa" style="background:linear-gradient(180deg,var(--night),var(--black))">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Barberii BRICI</span>
+      <h2>Oamenii din spatele scaunului.</h2>
+      <p>O echipă tânără, pasionată și mereu la curent cu trendurile. Programează-te direct cu barberul tău preferat.</p>
+    </div>
+    <div class="team-grid">
+      <div class="barber reveal"><div class="ph"><img src="assets/barber-dragos.jpg" alt="Dragoș Ștefan" loading="lazy" /></div><h3>Dragoș Ștefan</h3><span>Barber</span></div>
+      <div class="barber reveal"><div class="ph"><img src="assets/barber-edi.jpg" alt="Edi Adelin" loading="lazy" /></div><h3>Edi Adelin</h3><span>Barber</span></div>
+      <div class="barber reveal"><div class="ph"><img src="assets/barber-emi.jpg" alt="Emi Gorgan" loading="lazy" /></div><h3>Emi Gorgan</h3><span>Barber</span></div>
+      <div class="barber reveal"><div class="ph"><img src="assets/barber-luci.jpg" alt="Luci Lucian" loading="lazy" /></div><h3>Luci Lucian</h3><span>Barber</span></div>
+      <div class="barber reveal"><div class="ph"><img src="assets/barber-radu.jpg" alt="Radu Valentin" loading="lazy" /></div><h3>Radu Valentin</h3><span>Barber</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="recenzii" class="reviews">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Ce spun clienții</span>
+      <h2>4.7 din 5, în 245 de recenzii.</h2>
+      <p>Câteva dintre vocile celor care s-au întors. Recenziile complete sunt verificabile pe Google.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal">
+        <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg></span>
+        <p>„Băieți de treabă, te sfătuiesc cu drag cum să-ți aranjezi părul și barba. Pleci de fiecare dată mulțumit. Recomand cu încredere!"</p>
+        <div class="who"><div class="av">A</div><div><b>Andrei M.</b><small>Recenzie Google</small></div></div>
+      </div>
+      <div class="rev reveal">
+        <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg></span>
+        <p>„Profesioniști și punctuali. Mihai și-a luat timp pentru tuns și barbă, exact cum mi-am dorit. Produse de calitate, locație curată."</p>
+        <div class="who"><div class="av">R</div><div><b>Robert P.</b><small>Recenzie Google</small></div></div>
+      </div>
+      <div class="rev reveal">
+        <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.8 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg></span>
+        <p>„Cel mai bun barbershop din zonă. După prima vizită am rămas client fidel. Atmosferă faină și atenție la detalii."</p>
+        <div class="who"><div class="av">C</div><div><b>Cristian D.</b><small>Recenzie Google</small></div></div>
+      </div>
+    </div>
+    <div class="rev-foot reveal">
+      <a class="btn btn-ghost" href="https://www.google.com/maps/place/BRICI+Barbershop+%26+Grooming/@44.4844025,26.0494496,18z/data=!4m6!3m5!1s0x40b203d700ffb0f9:0x67a72552678420df!8m2!3d44.4845662!4d26.0494154!16s%2Fg%2F11h5rvv8s5" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L11 14.17l6.59-6.59L19 9l-8 8z"/></svg>
+        Vezi toate recenziile pe Google
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS + CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Program & Locație</span>
+      <h2>Te așteptăm pe Strada Jiului 93.</h2>
+    </div>
+    <div class="split">
+      <div class="panel reveal">
+        <ul class="hours" id="hours">
+          <li data-day="1"><span>Luni</span><span>10:00 – 21:00</span></li>
+          <li data-day="2"><span>Marți</span><span>10:00 – 21:00</span></li>
+          <li data-day="3"><span>Miercuri</span><span>10:00 – 21:00</span></li>
+          <li data-day="4"><span>Joi</span><span>10:00 – 21:00</span></li>
+          <li data-day="5"><span>Vineri</span><span>10:00 – 21:00</span></li>
+          <li data-day="6"><span>Sâmbătă</span><span>10:00 – 16:00</span></li>
+          <li data-day="0"><span>Duminică</span><span class="closed">Închis</span></li>
+        </ul>
+
+        <div class="contact-list" style="margin-top:2rem">
+          <div class="row">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><b>Adresă</b><span>Strada Jiului nr. 93, 013212 București</span></div>
+          </div>
+          <div class="row">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><b>Telefon</b><a href="tel:+40735933039">0735 933 039</a></div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.6rem">
+          <a class="btn btn-gold" href="https://mero.ro/p/brici-barbershopgrooming" target="_blank" rel="noopener">Programează online</a>
+          <a class="btn btn-ghost" href="https://wa.me/40735933039" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+
+        <div class="socials">
+          <a href="https://www.instagram.com/brici_barbershop/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.5.01-4.74.07-.95.04-1.47.2-1.81.34-.46.18-.78.39-1.12.73-.34.34-.55.66-.73 1.12-.14.34-.3.86-.34 1.81-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.95.2 1.47.34 1.81.18.46.39.78.73 1.12.34.34.66.55 1.12.73.34.14.86.3 1.81.34 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.95-.04 1.47-.2 1.81-.34.46-.18.78-.39 1.12-.73.34-.34.55-.66.73-1.12.14-.34.3-.86.34-1.81.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.95-.2-1.47-.34-1.81a3.02 3.02 0 0 0-.73-1.12 3.02 3.02 0 0 0-1.12-.73c-.34-.14-.86-.3-1.81-.34-1.24-.06-1.59-.07-4.74-.07zm0 2.76a5.3 5.3 0 1 1 0 10.6 5.3 5.3 0 0 1 0-10.6zm0 8.74a3.44 3.44 0 1 0 0-6.88 3.44 3.44 0 0 0 0 6.88zm6.74-8.94a1.24 1.24 0 1 1-2.48 0 1.24 1.24 0 0 1 2.48 0z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/people/BRICI-BarbershopGrooming/100057567694330/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 16.99 22 12z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="map reveal">
+        <iframe
+          title="Harta BRICI Barbershop"
+          src="https://www.google.com/maps?q=BRICI+Barbershop+Strada+Jiului+93+Bucuresti&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="bg"><img src="assets/result-2.jpg" alt="" /></div>
+  <div class="wrap">
+    <h2 class="reveal">Gata de o tunsoare ca la carte?</h2>
+    <p class="reveal">Locurile se ocupă repede. Rezervă-ți scaunul în câteva secunde — online sau pe WhatsApp.</p>
+    <div class="hero-cta reveal" style="justify-content:center">
+      <a class="btn btn-gold" href="https://mero.ro/p/brici-barbershopgrooming" target="_blank" rel="noopener">Programează online</a>
+      <a class="btn btn-ghost" href="https://wa.me/40735933039" target="_blank" rel="noopener">Scrie pe WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#top" class="brand"><img src="assets/logo.jpg" alt="BRICI logo" /><span>BRICI<b>.</b></span></a>
+        <small>Barbershop & Grooming · Strada Jiului 93, Sector 1, București. Tuns, barbă și styling de încredere.</small>
+      </div>
+      <div class="foot-links">
+        <a href="#servicii">Servicii</a>
+        <a href="#galerie">Rezultate</a>
+        <a href="#echipa">Echipa</a>
+        <a href="#recenzii">Recenzii</a>
+        <a href="tel:+40735933039">0735 933 039</a>
+      </div>
+    </div>
+    <div class="credit">© <span id="year"></span> BRICI Barbershop & Grooming. Toate drepturile rezervate.</div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/40735933039" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zM6.597 20.13c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.477-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+</a>
+
+<script>
+  // an curent
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // header scrolled
+  const head = document.getElementById('head');
+  const onScroll = () => head.classList.toggle('scrolled', window.scrollY > 30);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // mobile menu
+  const burger = document.getElementById('burger');
+  burger.addEventListener('click', () => document.body.classList.toggle('menu-open'));
+  document.querySelectorAll('#mobileMenu a').forEach(a =>
+    a.addEventListener('click', () => document.body.classList.remove('menu-open')));
+
+  // ziua de azi în program
+  const today = new Date().getDay();
+  const li = document.querySelector('#hours li[data-day="'+today+'"]');
+  if (li && !li.querySelector('.closed')) {
+    li.classList.add('today');
+    li.firstElementChild.innerHTML += ' <span class="tag">AZI</span>';
+  } else if (li) { li.classList.add('today'); }
+
+  // reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.15});
+  document.querySelectorAll('.reveal').forEach((el,i) => { el.style.transitionDelay = (i%4*60)+'ms'; io.observe(el); });
+
+  // parallax subtil pe hero (respectă reduced-motion)
+  const heroBg = document.getElementById('heroBg');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce) {
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      if (y < window.innerHeight) heroBg.style.transform = 'translateY(' + (y*0.18) + 'px) scale(1.05)';
+    }, {passive:true});
+  }
+</script>
+</body>
+</html>
